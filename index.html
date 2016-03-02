@@ -1,34 +1,48 @@
-<html>
+<!DOCTYPE html>
+<!-- Jeffrey Kim -->
 
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Magic Mirror</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+	
+  </head>
+  <body>
 
+    <div class="row expanded">
+      <div class="large-12 columns text-right">
+        <h1 id="time">Time</h1>
+      </div>
+    </div>
 
-<a href="http://www.accuweather.com/en/us/durham-nc/27701/weather-forecast/329821" class="aw-widget-legal">
-<!--
-By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
--->
-</a><div id="awcc1456510387414" class="aw-widget-current"  data-locationkey="329821" data-unit="f" data-language="en-us" data-useip="false" data-uid="awcc1456510387414"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+    <div class="row expanded">
+      <div class="large-12 columns text-right">
+		<h2 id="date">Date</h2>
+      </div>
+    </div>
 
+    <div class="row expanded">
+		<div class="large-12 columns text-right">
+			<h2 id="weather">Weather</h2>
+		</div>
+	</div>
 
-<script type="text/javascript">
-tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
-tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+	<div class="row expanded">
+		<div class="large-12 columns text-right">
+			<h2 id="calendar">Calendar</h2>
+		</div>
+	</div>
 
-function GetClock(){
-var d=new Date();
-var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getYear();
-if(nyear<1000) nyear+=1900;
-var nhour=d.getHours(),nmin=d.getMinutes();
-if(nmin<=9) nmin="0"+nmin
-
-document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+"";
-}
-
-window.onload=function(){
-GetClock();
-setInterval(GetClock,1000);
-}
-</script>
-<div id="clockbox"></div>
-
-
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/what-input.min.js"></script>
+	<script src="js/vendor/moment.js"></script>
+	<script src="js/vendor/jquery.simpleWeather.min.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
 </html>
