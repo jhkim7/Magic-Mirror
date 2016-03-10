@@ -1,9 +1,8 @@
 # Magic Mirror
 
 ### Introduction
-We stare at the mirror everyday looking into our beautiful reflection. Why not make that mirror a little interesting and make it smart? The magic mirror will display information such as weather, time and events in our calendar so we won't have to constantly check our phones. Here is the list of features and technologies used.
+I don't like taking my phone out of my pocket to check the weather to decide what I need to wear. The magic mirror will display information such as weather, time and events in our calendar so we won't have to constantly check our phones. Here is the list of features and technologies used.
 - Weather
-	- http://openweathermap.org/appid
 	- http://simpleweatherjs.com/
 - Time
 	- Moment.js
@@ -15,7 +14,7 @@ We stare at the mirror everyday looking into our beautiful reflection. Why not m
 TODO
 
 ### Usage
-TODO
+To check the weather and calendar of events for the day. 
 
 ### Contributing
 1. Fork it
